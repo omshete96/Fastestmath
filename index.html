@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Document</title>
+
+<script type="text/javascript">
+function display()
+{
+    var i,a;
+    a=form1.t1.value
+    for(i=1;i<=10;i++)
+        {
+            document.write(a*i+"<br/>");
+        }
+}  
+
+</script>
+
+<script type="text/javascript">
+function prime()
+{
+    var a,ans;
+    a=parseInt(form2.t2.value);
+    ans=1;
+    for(i=2;i<a;i++)
+        {
+            if(a%i==0)
+              {
+                ans=0;
+                break;
+              }
+        }
+        if(ans==1)
+          alert("Number Is Prime 😀");
+        else
+          alert("Number Is Not Prime 😀");
+}
+</script>
+
+<style>
+#css1{color:red; font-weight:500; font-family:arial}
+#css2{color:yellow; font-weight:500; font-family:Humnst777 Blk BT}
+#css3{color:white; font-weight:500; font-family:MV Boli}
+
+
+</style>
+</head>
+
+<body background="C:\Users\HP\Desktop\Website\images.jpg">
+
+<form name="form1" style="text-align:center">
+<h1 id="css1"><b>Enter Number That You Want The Table:-</b></h1>
+<textarea  cols="30" input type="text" name="t1"></textarea><br>
+<input type="image" src="C:\Users\HP\Desktop\Website\download (1).png" height="50" width="90" onClick="display()">
+</form>    
+
+<h1 align="center" id="css2">Program to check number is prime or not</h1>
+<form name="form2" style="text-align:center">
+<h1 id="css3">Enter Your Number That You Want To Check This Is Prime Or Not(Greater Than One):-</h1>
+<textarea  cols="30" input type="text" name="t2"></textarea><br>
+<input type="image" src="C:\Users\HP\Desktop\Website\download.jpg" height="50" width="90" onClick="prime()">
+</form>
+</body>
+</html>
